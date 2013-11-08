@@ -1,19 +1,9 @@
-<h3>Stox Details/Goals/Action Items</h3>
+<p>Simple application that compares the value of multiple stocks.</p>
 
+<h4> Stox Action Items</h4>
 <ul>
-	<li>Details
-		<ul>
-			<li></li>
-		</ul>
-	</li>
-	<li>Goals
-		<ul>
-			<li></li>
-		</ul>
-	</li>
-	<li>Action Items
-		<ul>
-			<li></li>
-		</ul>
-	</li>
+  <li>Find better API that gives JSON. This should speed up the app and give me some more flexibility.</li>
+  <li>Integrate more analyses and visualizations of these analyses.</li>
+  <li>Brainstorm how the D3 aspect of this project can be built upon.</li>
 </ul>
+
