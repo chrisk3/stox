@@ -11,7 +11,14 @@
 	function create_url($ticker1, $ticker2)
 	{
 		$month = date('n') - 1;
-		$day = date("j", time() - 60 * 60 * 24);
+
+		if (date('l') == 'Sunday')
+			$day = date("j", time() - ((60 * 60 * 24) * 2));
+		else if (date('l') == 'Monday')
+			$day = date("j", time() - ((60 * 60 * 24) * 3));
+		else
+			$day = date("j", time() - 60 * 60 * 24);
+
 		$year = date("Y");
 
 		$url1 = "http://ichart.finance.yahoo.com/table.csv?s={$ticker1}&a={$month}&b={$day}&c={$year}&d={$month}&e={$day}&f={$year}&g=d&ignore=.csv";
